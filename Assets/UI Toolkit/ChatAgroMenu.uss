@@ -1,0 +1,202 @@
+.app-root {
+  flex-grow: 1;
+  background-color: #0f1412;
+  color: #e7efe9;
+  padding: 14px;
+}
+
+.topbar {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.06);
+}
+
+.topbar-left { flex-direction: column; }
+.app-title { font-size: 18px; unity-font-style: bold; }
+.app-subtitle { font-size: 12px; opacity: 0.8; margin-top: 2px; }
+
+.status { font-size: 12px; opacity: 0.85; }
+
+.content {
+  flex-grow: 1;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.04);
+}
+
+.section { margin-top: 14px; }
+.section-header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.section-title { font-size: 14px; unity-font-style: bold; margin-bottom: 6px; }
+
+.grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  height: 64px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background-color: rgba(255,255,255,0.06);
+  color: #e7efe9;
+  unity-font-style: bold;
+  font-size: 13px;
+  border-left-width: 2px;
+  border-left-color: rgba(255,255,255,0.12);
+}
+
+.card.primary {
+  background-color: rgba(80, 180, 110, 0.18);
+  border-left-color: rgba(80, 180, 110, 0.6);
+}
+
+.list {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recent-item {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.06);
+}
+
+.recent-title { unity-font-style: bold; font-size: 13px; }
+.recent-sub { font-size: 11px; opacity: 0.8; margin-top: 2px; }
+
+.banner {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  background-color: rgba(160, 200, 120, 0.14);
+}
+
+.banner-title { unity-font-style: bold; font-size: 13px; }
+.banner-text { font-size: 12px; opacity: 0.9; margin-top: 4px; }
+
+.link {
+  background-color: transparent;
+  border-width: 0px;
+  color: #bfe6c8;
+  unity-text-align: middle-left;
+  font-size: 12px;
+}
+
+.bottomnav {
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.06);
+}
+
+.navitem {
+  width: 32%;
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.04);
+  color: #e7efe9;
+}
+
+.navitem.active {
+  background-color: rgba(80, 180, 110, 0.18);
+}
+
+.spacer { height: 10px; }
+
+/* Overlay Chat */
+.overlay {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.55);
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.hidden { display: none; }
+
+.chat-panel {
+  width: 100%;
+  max-width: 640px;
+  height: 85%;
+  border-radius: 16px;
+  background-color: #101614;
+  padding: 10px;
+}
+
+.chat-top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 6px 10px 6px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+.chat-title { unity-font-style: bold; font-size: 14px; }
+.chat-top-right { flex-direction: row; }
+
+.chat-scroll {
+  flex-grow: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.04);
+  padding: 10px;
+}
+
+.chat-messages { flex-direction: column; gap: 8px; }
+
+.bubble {
+  max-width: 85%;
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background-color: rgba(80, 180, 110, 0.22);
+}
+
+.bubble.bot {
+  align-self: flex-start;
+  background-color: rgba(255,255,255,0.08);
+}
+
+.chat-inputbar {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.chat-input {
+  flex-grow: 1;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.06);
+  color: #e7efe9;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+}
+
+.send {
+  width: 90px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgba(80, 180, 110, 0.28);
+  unity-font-style: bold;
+}

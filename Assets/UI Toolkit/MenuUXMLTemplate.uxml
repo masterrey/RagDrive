@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/ChatAgroMenu.uss?fileID=7433441132597879392&amp;guid=d480f57ee6ef93146b5ddae7a2bd935b&amp;type=3#ChatAgroMenu" />
+    <ui:VisualElement name="AppRoot" class="app-root">
+        <ui:VisualElement class="topbar">
+            <ui:VisualElement class="topbar-left">
+                <ui:Label text="Chat Agro" class="app-title" />
+                <ui:Label text="Assistente para Agricultura" class="app-subtitle" />
+            </ui:VisualElement>
+            <ui:VisualElement class="topbar-right">
+                <ui:Label name="StatusLabel" text="● Online (frontend)" class="status" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView name="MainScroll" class="content">
+            <ui:Label text="Acesso rápido" class="section-title" />
+            <ui:VisualElement class="grid">
+                <ui:Button name="BtnChatbot" text="💬 Chatbot" class="card primary" />
+                <ui:Button name="BtnPhoto" text="📷 Diagnóstico por Foto" class="card" />
+                <ui:Button name="BtnWeather" text="🌤️ Clima" class="card" />
+                <ui:Button name="BtnTips" text="🌱 Recomendações" class="card" />
+            </ui:VisualElement>
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section-header">
+                    <ui:Label text="Conversas recentes" class="section-title" />
+                    <ui:Button name="BtnNewChat" text="＋ Nova conversa" class="link" />
+                </ui:VisualElement>
+                <ui:VisualElement name="RecentList" class="list" />
+            </ui:VisualElement>
+            <ui:VisualElement class="banner">
+                <ui:Label text="Dica rápida" class="banner-title" />
+                <ui:Label name="TipLabel" text="Pergunte sobre manejo, pragas, adubação e calendário de plantio." class="banner-text" />
+            </ui:VisualElement>
+            <ui:VisualElement class="spacer" />
+        </ui:ScrollView>
+        <ui:VisualElement class="bottomnav">
+            <ui:Button name="NavHome" text="🏠 Home" class="navitem active" />
+            <ui:Button name="NavChat" text="💬 Chat" class="navitem" />
+            <ui:Button name="NavProfile" text="👤 Perfil" class="navitem" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ChatScreen" class="overlay hidden">
+            <ui:VisualElement class="chat-panel">
+                <ui:VisualElement class="chat-top">
+                    <ui:Button name="BtnBack" text="← Voltar" class="link" />
+                    <ui:Label text="Chatbot" class="chat-title" />
+                    <ui:VisualElement class="chat-top-right">
+                        <ui:Button name="BtnClear" text="Limpar" class="link" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:ScrollView name="ChatScroll" class="chat-scroll">
+                    <ui:VisualElement name="ChatMessages" class="chat-messages" />
+                </ui:ScrollView>
+                <ui:VisualElement class="chat-inputbar">
+                    <ui:TextField name="InputField" class="chat-input" />
+                    <ui:Button name="BtnSend" text="Enviar" class="send" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
